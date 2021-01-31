@@ -161,8 +161,8 @@ class TestIntervalIndex:
         assert isinstance(ser.cat.categories, IntervalIndex)
 
         # B & D end up as Categoricals
-        # the remainer are converted to in-line objects
-        # contining an IntervalIndex.values
+        # the remainder are converted to in-line objects
+        # containing an IntervalIndex.values
         df["B"] = ser
         df["C"] = np.array(ser)
         df["D"] = ser.values

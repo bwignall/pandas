@@ -111,7 +111,7 @@ cdef inline int64_t cast_from_unit(object ts, str unit) except? -1:
     if ts is None:
         return m
 
-    # cast the unit, multiply base/frace separately
+    # cast the unit, multiply base/frac separately
     # to avoid precision issues from float -> int
     base = <int64_t>ts
     frac = ts - base

@@ -1849,7 +1849,7 @@ class TestDataFrameConstructors:
         expected = Series([np.dtype("int64")] * 5)
         tm.assert_series_equal(result, expected)
 
-        # overflow issue? (we always expecte int64 upcasting here)
+        # overflow issue? (we always expect int64 upcasting here)
         df = DataFrame({"a": [2 ** 31, 2 ** 31 + 1]})
         assert df.dtypes.iloc[0] == np.dtype("int64")
 

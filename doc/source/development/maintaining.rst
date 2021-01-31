@@ -138,7 +138,7 @@ Reviewing pull requests
 -----------------------
 
 Anybody can review a pull request: regular contributors, triagers, or core-team
-members. But only core-team members can merge pull requets when they're ready.
+members. But only core-team members can merge pull requests when they're ready.
 
 Here are some things to check when reviewing a pull request.
 

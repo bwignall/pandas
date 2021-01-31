@@ -2459,7 +2459,7 @@ def test_empty_string_datetime_coerce__format():
     with pytest.raises(ValueError, match="does not match format"):
         result = pd.to_datetime(td, format=format, errors="raise")
 
-    # don't raise an expection in case no format is given
+    # don't raise an exception in case no format is given
     result = pd.to_datetime(td, errors="raise")
     tm.assert_series_equal(result, expected)
 

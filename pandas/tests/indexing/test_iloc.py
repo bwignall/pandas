@@ -128,7 +128,7 @@ class TestiLocBaseIndependent:
             assert obj.values.base is values.base and values.base is not None
 
     def test_is_scalar_access(self):
-        # GH#32085 index with duplicates doesnt matter for _is_scalar_access
+        # GH#32085 index with duplicates doesn't matter for _is_scalar_access
         index = Index([1, 2, 1])
         ser = Series(range(3), index=index)
 

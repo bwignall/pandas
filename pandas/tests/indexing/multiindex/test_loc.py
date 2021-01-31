@@ -326,7 +326,7 @@ class TestMultiIndexLoc:
     [
         ([], []),  # empty ok
         (["A"], slice(3)),
-        (["A", "D"], []),  # "D" isnt present -> raise
+        (["A", "D"], []),  # "D" isn't present -> raise
         (["D", "E"], []),  # no values found -> raise
         (["D"], []),  # same, with single item list: GH 27148
         (pd.IndexSlice[:, ["foo"]], slice(2, None, 3)),

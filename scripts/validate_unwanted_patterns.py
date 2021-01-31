@@ -6,7 +6,7 @@ The reason this file exist despite the fact we already have
 `ci/code_checks.sh`,
 (see https://github.com/pandas-dev/pandas/blob/master/ci/code_checks.sh)
 
-is that some of the test cases are more complex/imposible to validate via regex.
+is that some of the test cases are more complex/impossible to validate via regex.
 So this file is somewhat an extensions to `ci/code_checks.sh`
 """
 
@@ -320,7 +320,7 @@ def strings_with_wrong_placed_whitespace(
         Returns
         -------
         bool
-            True if the two recived string match, an unwanted pattern.
+            True if the two received string match, an unwanted pattern.
 
         Notes
         -----

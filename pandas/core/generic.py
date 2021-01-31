@@ -6386,7 +6386,7 @@ class NDFrame(PandasObject, SelectionMixin, indexing.IndexingMixin):
 
         self._consolidate_inplace()
 
-        # set the default here, so functions examining the signaure
+        # set the default here, so functions examining the signature
         # can detect if something was set (e.g. in groupby) (GH9221)
         if axis is None:
             axis = 0
@@ -10216,7 +10216,7 @@ class NDFrame(PandasObject, SelectionMixin, indexing.IndexingMixin):
         1980-02-01  0.013810  0.013684  0.006549
         1980-03-01  0.053365  0.059318  0.061876
 
-        Percentage of change in GOOG and APPL stock volume. Shows computing
+        Percentage of change in GOOG and AAPL stock volume. Shows computing
         the percentage change between columns.
 
         >>> df = pd.DataFrame({
